@@ -1,0 +1,14 @@
+﻿using MediatR;
+using SalaryCalculator.Application.Models.ResponseModel;
+using SalaryCalculator.Core.Framework;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace SalaryCalculator.Application.Models.RequestModel
+{
+	public class GetEmployeeProfilesRequest : IRequest<Result<GetEmployeeProfilesResponse>>
+	{
+		public string YearMonth { get; set; }
+	}
+}
